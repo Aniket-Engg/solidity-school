@@ -7,7 +7,7 @@ pragma solidity ^0.5.0;
 
 contract Storage {
 
-    uint256 n;
+    uint256 private n;
 
     /**
      * @dev Stores value in variable 'n'
