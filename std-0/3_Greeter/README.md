@@ -8,6 +8,10 @@ Write a contract 'Greeter' which should set a string with value passed by user. 
 
 Solidity provides `string` data type for arbitrary-length string (UTF-8) data. String literals are written with either double or single-quotes ("foo" or 'bar'). They do not imply trailing zeroes as in `C`; "foo" represents three bytes, not four.
 
+### Data Location
+
+Since v0.5.0, explicit data location(memory, storage and calldata) for all variables of struct, array or mapping types is now mandatory. This is also applied to function parameters and return variables. For return variables, data location must be `memory`. 
+
 ### Visibility Specifier
 There are four types of visibilities for functions and state variables.
 
