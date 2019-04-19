@@ -1,4 +1,4 @@
-# Solidity School: Standard 0
-This place is appropriate for all noobs, taking their first steps towards Solidity.
+# Standard :zero:
+Welcome started, great to see you taking first steps towards Solidity !!!
 
-Here, we make sure that your entry to smart contract world can be made smooth and interesting.
+Here, we make sure that your entry to smart contract world is smooth and interesting. So we present you very simple problem statement to get familiar with the wind. Hope you will feel better here. 
