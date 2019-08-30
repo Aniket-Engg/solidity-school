@@ -9,7 +9,8 @@ Write a function `getStage()`, which should take no. of months as a parameter an
 * TeenAger (13-19 years)
 * Adult (20-60 years, just accept it :grimacing:)
 * Old   (>60 years)
-Use enum for stage listing. 
+
+Use `enum` for stage listing. 
 
 ## Informational Hint
 
