@@ -1,7 +1,7 @@
 # Rent
 ## Problem Statement
 
-Write a contract named "Rent" which will be deployed by Landlord and all ethers transferred on this contract address will be automatically transferred to landlord's address. On deployment, landlord will provide the information of tenant which will be public. Information of tenant will be name, age & occupation.
+Write a contract named "Rent" which will be deployed by Landlord and all ethers transferred on this contract address will be automatically transferred to landlord's address, So that tenant can use contract address to pay rent. At the time of contract deployment, landlord will provide the information of tenant which will be public. Information of tenant will be name, age & occupation.
 
 Use `fallback` function wherever required. 
 
