@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 contract Rent {
 
@@ -21,9 +21,9 @@ contract Rent {
     }
 
     /**
-     * @dev Fallback
+     * @dev receive ether function
      */
-    function() external payable {
+    receive() external payable {
         landlord.transfer(msg.value);
     }
 }

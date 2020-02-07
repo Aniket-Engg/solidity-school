@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 /**
  * @title HelloWorld
@@ -9,7 +9,7 @@ pragma solidity ^0.5.0;
 contract HelloWorld {
 
     /**
-     * @dev Prints "Hello World!" 
+     * @dev Prints "Hello World!"
      */
     
     function print() public pure returns (string memory){

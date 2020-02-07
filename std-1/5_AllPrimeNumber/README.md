@@ -12,11 +12,20 @@ Write a contract 'AllPrimeNumber' which implements a function named addPrime & g
 Use [Prime Number](https://github.com/Aniket-Engg/solidity-school/blob/master/std-1/4_PrimeNumber/PrimeNumber.sol) contract function privately.
 
 ### Array Members
-* `length:`
-Arrays have a length member that contains their number of elements. The length of memory arrays is fixed (but dynamic, i.e. it can depend on runtime parameters) once they are created. For dynamically-sized arrays (only available for storage), this member can be assigned to resize the array. Accessing elements outside the current length does not automatically resize the array and instead causes a failing assertion. Increasing the length adds new zero-initialised elements to the array. Reducing the length performs an implicit :ref:delete on each of the removed elements. If you try to resize a non-dynamic array that isn’t in storage, you receive a Value must be an lvalue error.
-* `push:`
-Dynamic storage arrays and bytes (not string) have a member function called push that you can use to append an element at the end of the array. The element will be zero-initialised. The function returns the new length.
-* `pop:`
-Dynamic storage arrays and bytes (not string) have a member function called pop that you can use to remove an element from the end of the array. This also implicitly calls :ref:delete on the removed element.
+* `length`
+
+Arrays have a length member that contains their number of elements. The length of memory arrays is fixed (but dynamic, i.e. it can depend on runtime parameters) once they are created.
+
+* `push()`
+
+Dynamic storage arrays and bytes (not string) have a member function called push() that you can use to append a zero-initialised element at the end of the array. It returns a reference to the element, so that it can be used like x.push().t = 2 or x.push() = b.
+
+* `push(x)`
+
+Dynamic storage arrays and bytes (not string) have a member function called push(x) that you can use to append a given element at the end of the array. The function returns nothing.
+
+* `pop`
+
+Dynamic storage arrays and bytes (not string) have a member function called pop that you can use to remove an element from the end of the array. This also implicitly calls delete on the removed element.
 
 Know  more about Array in Solidity here: https://solidity.readthedocs.io/en/latest/types.html#arrays
