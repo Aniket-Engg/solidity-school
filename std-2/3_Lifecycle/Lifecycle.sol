@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 contract Lifecycle {
 
@@ -6,7 +6,7 @@ contract Lifecycle {
 
     /**
      * @dev Return stage of life
-     * @param rollmonthsnumber Number of months
+     * @param months Number of months
      */
 
     function getStage(uint months) public pure returns (Stage){

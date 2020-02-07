@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 /**
  * @title Owner
@@ -8,14 +8,13 @@ pragma solidity ^0.5.0;
 contract Owner {
 
     address private _owner;
-    
     event OwnerSet(address owner);
 
     /**
      * @dev Sets owner address
      * @param ownerAddress Owner address
      */
-    
+
     function setOwner(address ownerAddress) public {
         _owner = ownerAddress;
         emit OwnerSet(_owner);

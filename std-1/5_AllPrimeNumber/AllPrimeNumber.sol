@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 contract AllPrimeNumber {
 
@@ -10,7 +10,6 @@ contract AllPrimeNumber {
      */
 
     function addPrime(uint limit) public {
-        primes.length = 0;
         for(uint j = 2; j < limit; j++){
             if(ifPrime(j))
                 primes.push(j);

@@ -18,6 +18,6 @@ For various other details, visit the wiki section.
 * One who is looking to contribute should visit [Contribution Guidelines](https://github.com/Aniket-Engg/solidity-school/wiki/Contribution-Guidelines)
 
 ## Solidity Version
-Currently we are going with Solidity version 0.5.0. We will update the contract by following major & minor release.
+Currently we are going with Solidity version 0.6.0. We will update the contract by following major & minor release.
 
 **NOTE:** Contracts in this repository are only for learning purpose and not recommnended for production use.

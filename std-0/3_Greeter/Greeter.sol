@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 /**
  * @title Greeter
@@ -11,9 +11,9 @@ contract Greeter {
 
     /**
      * @dev Sets greeting message
-     * @param message greeting message by user 
+     * @param message greeting message by user
      */
-    
+
     function greet(string memory message) public {
         _greeting = message;
     }

@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 /**
  * @title Storage
@@ -10,9 +10,9 @@ contract Storage {
     uint256 n;
 
     /**
-     * @dev Stores value in variable 'n' 
+     * @dev Stores value in variable 'n'
      */
-    
+
     function store() public {
         n = 5;
     }
