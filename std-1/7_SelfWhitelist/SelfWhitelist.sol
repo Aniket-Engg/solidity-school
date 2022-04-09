@@ -3,6 +3,12 @@ pragma solidity ^0.6.0;
 contract SelfWhitelist {
     address[] public whitelisted;
 
+     /**
+     * @dev only adder can remove from  whitelist array
+     * @param addr address to add
+     */
+
+    
     /**
      * @dev add address in whitelist array
      * @param addr address to add
@@ -13,6 +19,7 @@ contract SelfWhitelist {
             whitelisted.push(addr);
         }
     }
+
 
     /**
      * @dev Check if address exists in whitelist array
