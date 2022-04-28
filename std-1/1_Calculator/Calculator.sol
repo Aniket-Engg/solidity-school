@@ -41,4 +41,14 @@ contract Calculator {
     function div(int a, int b) public pure returns (int){
         return (a/b);
     }
+
+     /**
+     * @dev returns the reminder of two passed numbers
+     * @param a first number
+     * @param b second number
+     */
+
+     function mod(int a, int b) public pure returns(int) {
+         return(a % b);
+     }
 }

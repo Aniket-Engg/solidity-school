@@ -1,4 +1,4 @@
-pragma solidity ^0.6.0;
+pragma solidity > 0.6.0;
 
 /**
  * @title Storage
@@ -13,8 +13,12 @@ contract Storage {
      * @dev Stores value in variable 'n'
      */
 
-    function store() public {
-        n = 5;
+     **
+     * user can input the value they want to store inside n
+     */
+
+    function store(uint valueToStore) public {
+        n = valueToStore;
     }
 
     /**
