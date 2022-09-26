@@ -5,7 +5,7 @@ import "remix_tests.sol"; // this import is automatically injected by Remix.
 import "hardhat/console.sol";
 import "../1_Student/Student.sol";
 
-contract BallotTest {
+contract StudentTest {
 
     Student student;
     function beforeAll () public {
