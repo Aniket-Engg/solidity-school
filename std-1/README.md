@@ -3,7 +3,7 @@ Looks you have passed through the Standard 0 and have a basic level of understan
 
 Here we will go further on Solidity ladder and will get you introduced to one level up things.
 
-Here you will be introduced to various operators, conditional statements, data types etc.
+Here you will be introduced to various operators, conditional statements, data types & SPDX License Identifier etc.
 
 Let's move!
 
