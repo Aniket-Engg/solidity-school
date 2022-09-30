@@ -7,6 +7,10 @@ Use `receive()` function wherever required.
 
 ## Informational Hint
 
+### Payable address
+
+An address expected to receive some of the ether should be declared using `address payable`. An address not already declared `payable` at run time can be type casted like `payable(addressVariable)`
+
 ### Receive Ether Function
 A contract can have at most one receive function, declared using `receive() external payable { ... }`(without the `function` keyword). This function cannot have arguments, cannot return anything and must have external visibility and payable state mutability. It is executed on a call to the contract with empty calldata. This is the function that is executed on plain Ether transfers (e.g. via `.send()` or `.transfer()`).
 

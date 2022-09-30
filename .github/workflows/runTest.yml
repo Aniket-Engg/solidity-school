@@ -12,4 +12,4 @@ jobs:
         uses: EthereumRemix/sol-test@v1
         with:
             test-path: 'std-2/tests'
-            compiler-version: '0.6.0'
+            compiler-version: '0.8.17'
