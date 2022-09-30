@@ -3,7 +3,7 @@ Hope you are having a great time in this school and getting known to various con
 
 Now this is time to get level high & play with more than one.
 
-In this Standard, you will learn about libraries, interfaces, abstract contracts, inheritance, interaction with deployed contract and other related things.
+In this Standard, you will learn about libraries, inheritance, abstract contracts, interfaces, interaction with deployed contract and other related things.
 
 Get ready for this! :sunglasses:
 
