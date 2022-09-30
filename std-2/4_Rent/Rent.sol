@@ -1,4 +1,6 @@
-pragma solidity ^0.6.0;
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.17;
 
 contract Rent {
 
@@ -13,11 +15,11 @@ contract Rent {
      * @param age Tenant age
      * @param occupation Tenant occupation
      */
-    constructor (string memory name, uint age, string memory occupation) public{
+    constructor (string memory name, uint age, string memory occupation) {
         tenantName = name;
         tenantAge = age;
         tenantOccupation = occupation;
-        landlord = msg.sender;
+        landlord = payable(msg.sender);
     }
 
     /**

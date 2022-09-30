@@ -1,4 +1,6 @@
-pragma solidity ^0.6.0;
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.17;
 
 contract Lifecycle {
 
@@ -9,7 +11,7 @@ contract Lifecycle {
      * @param months Number of months
      */
 
-    function getStage(uint months) public pure returns (Stage){
+    function getStage(uint months) public pure returns (Stage) {
         if(months > 0 && months <= 12)
             return Stage.Infant;
         else if(months > 12 && months <= 24)

@@ -1,4 +1,6 @@
-pragma solidity ^0.6.0;
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.17;
 
 contract AttendanceRegister {
 
@@ -16,14 +18,14 @@ contract AttendanceRegister {
     mapping(uint => Student) public register; // roll number => student details
 
     modifier isTeacher {
-        require(msg.sender == teacher,"Only teacher can add student");
+        require(msg.sender == teacher, "Only teacher can add student");
         _;
     }
 
     /**
      * @dev Constructor
      */
-    constructor() public{
+    constructor() {
         teacher = msg.sender;
         rollNumber = 0;
     }
@@ -35,11 +37,11 @@ contract AttendanceRegister {
      * @param class Student class
      * @param joiningDate Student joining date
      */
-    function add(string memory name, uint class, uint joiningDate) public isTeacher{
+    function add(string memory name, uint class, uint joiningDate) public isTeacher {
         require(class > 0 && class <= 12, "Invalid class");
         Student memory s = Student(name, class, joiningDate);
         rollNumber++;
         register[rollNumber] = s;
-        emit Added(name, class, now);
+        emit Added(name, class, block.timestamp);
     }
 }

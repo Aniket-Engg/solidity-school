@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.6.0;
+pragma solidity ^0.8.17;
 import "remix_tests.sol"; // this import is automatically injected by Remix.
 import "hardhat/console.sol";
 import "../1_Student/Student.sol";

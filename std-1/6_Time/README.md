@@ -18,4 +18,4 @@ Suffixes like seconds, minutes, hours, days and weeks after literal numbers can 
 1 weeks == 7 days
 ```
 
-To get current time, `now` can be used being aware about the fact that it can be influenced by miners to some degree. It retuns `uint`.
+To get current time, `block.timestamp` can be used being aware about the fact that it can be influenced by miners to some degree. It retuns `uint`.
