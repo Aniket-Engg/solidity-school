@@ -12,3 +12,5 @@ Inherit the [AttendanceRegister contract in std-2](../../std-2/5_AttendanceRegis
 Solidity supports multiple inheritance including polymorphism.
 
 It is possible to call functions further up in the inheritance hierarchy internally by explicitly specifying the contract using `ContractName.functionName()`
+
+Know more: https://docs.soliditylang.org/en/latest/contracts.html#inheritance
