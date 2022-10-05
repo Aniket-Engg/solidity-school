@@ -27,7 +27,6 @@ contract AttendanceRegister {
      */
     constructor() {
         teacher = msg.sender;
-        rollNumber = 0;
     }
 
 
