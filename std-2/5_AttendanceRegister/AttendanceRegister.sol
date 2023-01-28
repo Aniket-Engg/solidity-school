@@ -15,7 +15,7 @@ contract AttendanceRegister {
 
     event Added(string name, uint class, uint time);
 
-    mapping(uint => Student) public register; // roll number => student details
+    mapping(uint => Student) public registered; // roll number => student details
 
     modifier isTeacher {
         require(msg.sender == teacher, "Only teacher can add student");
