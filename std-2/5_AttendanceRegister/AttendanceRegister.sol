@@ -40,7 +40,7 @@ contract AttendanceRegister {
         require(class > 0 && class <= 12, "Invalid class");
         Student memory s = Student(name, class, joiningDate);
         rollNumber++;
-        register[rollNumber] = s;
+        registered[rollNumber] = s;
         emit Added(name, class, block.timestamp);
     }
 }
