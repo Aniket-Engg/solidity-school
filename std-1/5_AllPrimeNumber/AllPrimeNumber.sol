@@ -12,6 +12,7 @@ contract AllPrimeNumber {
      */
 
     function addPrime(uint limit) public {
+        delete primes; //Clears all previous values stored in primes array, so we do not store duplicates
         for(uint j = 2; j < limit; j++){
             if(ifPrime(j))
                 primes.push(j);
