@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.17;
+
+contract Enrollment {
+
+  // base contract that holds the employee information
+  struct EmployeeDetails {
+    string name;
+    uint age;
+    string department;
+    string childOrgName;
+  }
+
+  mapping (address => EmployeeDetails) employees;
+
+  function enroll(address _employeeAddress, string memory _name, uint _age, string memory _department, string memory _childOrgName) public virtual {
+    employees[_employeeAddress] = EmployeeDetails(_name, _age, _department, _childOrgName);
+  }
+}
+
+contract NewCompany is Enrollment {
+
+  // child contract that overrides the enroll method to include child organization specific information
+  function enroll(string memory _name, uint _age, string memory _department, string memory _childOrgName) public {
+    employees[msg.sender] = EmployeeDetails(_name, _age, _department, _childOrgName);
+  }
+}
