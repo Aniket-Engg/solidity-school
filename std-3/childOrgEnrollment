@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.17;
 
-contract Enrollment {
+contract ParentOrg {
 
   // base contract that holds the employee information
   struct EmployeeDetails {
@@ -14,15 +14,20 @@ contract Enrollment {
 
   mapping (address => EmployeeDetails) employees;
 
-  function enroll(address _employeeAddress, string memory _name, uint _age, string memory _department, string memory _childOrgName) public virtual {
-    employees[_employeeAddress] = EmployeeDetails(_name, _age, _department, _childOrgName);
+    /// @notice Base method that will be inherited
+    /// @dev Marked virtual because of overriding
+    /// @param _name, _age, _department, _childOrgName The information of the new member being enrolled
+  function enroll(string memory _name, uint _age, string memory _department, string memory _childOrgName) virtual external {
+    employees[msg.sender] = EmployeeDetails(_name, _age, _department, _childOrgName);
   }
 }
 
-contract NewCompany is Enrollment {
+contract NewCompany is ParentOrg {
 
-  // child contract that overrides the enroll method to include child organization specific information
-  function enroll(string memory _name, uint _age, string memory _department, string memory _childOrgName) public {
+    /// @notice Overrides the enroll method to include child organization specific information
+    /// @dev This needs to inherit with the base enroll method
+    /// @param _name, _age, _department, _childOrgName The information of the new member being enrolled
+  function enroll(string memory _name, uint _age, string memory _department, string memory _childOrgName) override public {
     employees[msg.sender] = EmployeeDetails(_name, _age, _department, _childOrgName);
   }
 }
