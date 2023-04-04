@@ -1,7 +1,7 @@
 # childOrgEnrollment
 ## Problem Statement
 
-In Solidty, Inheritance allows function overriding.
+In Solidity, Inheritance allows function overriding.
 
 This problem statement is about creating a contract when an employee is moved from one child organization to another organization. There should be a base contract referencing the employee enrollment first time. So an `enroll` method in base contract will take information of employee like name, age, department, childOrgName etc.
 
