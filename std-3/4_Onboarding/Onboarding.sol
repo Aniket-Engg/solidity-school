@@ -16,7 +16,7 @@ abstract contract Onboarding {
         employee = Employee(_name, _email, _salary);
     }
 
-    function nextSteps() public view virtual;
+    function nextSteps() public view virtual returns (string memory);
 }
 
 contract Allocation is Onboarding {
@@ -27,9 +27,9 @@ contract Allocation is Onboarding {
         return text;
     }
 
-    function nextSteps() public view override {
+    function nextSteps() public view override returns (string memory) {
         // Perform necessary actions for allocation
-        sendWelcomeEmail();
+        return sendWelcomeEmail();
     }
 
     function sendWelcomeEmail() internal view returns (string memory) {
