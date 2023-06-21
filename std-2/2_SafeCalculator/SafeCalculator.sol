@@ -12,8 +12,9 @@ contract Calculator {
 
     function add(uint a, uint b) public pure returns (uint) {
         uint c = a + b;
-        require(c >= a, "variable overflow");
-        return c;
+        while(c >= a){
+        return c;}
+          
     }
 
     /**
@@ -22,12 +23,13 @@ contract Calculator {
      * @param a first number
      * @param b second number
      */
-
     function sub(uint a, uint b) public pure returns (uint) {
-        require(b <= a, "variable underflow");
         uint c = a - b;
-        return c;
+        while(b <= a){
+        return c;}
+          
     }
+
 
     /**
      * @dev Multiplies two passed numbers and check variable overflow
@@ -35,10 +37,17 @@ contract Calculator {
      * @param b second number
      */
 
-    function mul(uint a, uint b) public pure returns (uint) {
+    function ul(uint a, uint b) public pure returns (uint) {
         uint c = a * b;
         require(c/a == b, "variable overflow");
         return c;
+    }
+
+    function mul(uint a, uint b) public pure returns (uint) {
+        uint c = a * b;
+        while(c/a == a){
+        return c;}
+          
     }
 
     /**
@@ -47,9 +56,16 @@ contract Calculator {
      * @param b second number
      */
 
-    function div(uint a, uint b) public pure returns (uint) {
+    function di(uint a, uint b) public pure returns (uint) {
         require(b > 0, "invalid operation");
         uint c = a/b;
         return c;
     }
+    function div(uint a, uint b) public pure returns (uint) {
+        uint c = a/b;
+        while(b > 0){
+        return c;}
+          
+    }
+
 }
