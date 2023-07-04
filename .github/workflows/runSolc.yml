@@ -1,0 +1,10 @@
+name: run-tests
+on: [push]
+
+jobs:
+  run_sample_test_job:
+    runs-on: ubuntu-latest
+    name: A job to run compilation for contracts
+    steps:
+      - name: Run compilation
+        uses: solc
