@@ -1,7 +1,7 @@
 # Standard :three:
-Hope you are having a great time in this school and getting known to various concepts with examples. 
+Hope you are having a great time in this school and getting familiar to various concepts with examples. 
 
-Now this is time to get level high & play with more than one.
+Now this is time to get one level high & play with more than one.
 
 In this Standard, you will learn about libraries, inheritance, abstract contracts, interfaces, interaction with deployed contract and other related things.
 
