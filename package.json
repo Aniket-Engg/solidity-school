@@ -1,0 +1,26 @@
+{
+  "name": "solidity-school",
+  "version": "1.0.0",
+  "description": "First place for early developers to learn Solidity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "solc **/**/*.sol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aniket-Engg/solidity-school.git"
+  },
+  "keywords": [
+    "solidity"
+  ],
+  "author": "Aniket-Engg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aniket-Engg/solidity-school/issues"
+  },
+  "homepage": "https://github.com/Aniket-Engg/solidity-school#readme",
+  "devDependencies": {
+    "solc": "^0.8.20"
+  }
+}
