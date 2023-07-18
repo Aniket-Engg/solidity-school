@@ -17,9 +17,8 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-          name: "Compile contracts"
-          command: "npm run compile"
+      - run: npm install
+      - run: npm run compile
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
