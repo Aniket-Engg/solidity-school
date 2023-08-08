@@ -2,7 +2,14 @@
 
 pragma solidity ^0.8.17;
 
-contract Calculator {
+interface Calculator {
+    function add(uint a, uint b) external returns (uint);
+    function sub(uint a, uint b) external returns (uint);
+    function mul(uint a, uint b) external returns (uint);
+    function div(uint a, uint b) external returns (uint);
+}
+
+contract CalculatorUsingInterface is Calculator {
 
     /**
      * @dev Add two passed numbers and check variable overflow
