@@ -1,7 +1,9 @@
 # Standard :four:
-So now you have become a great knowledge holder. This is time to present it with confidence.
+Now you have gained sufficient development experience. This is time to present it in more elegant way.
 
-Here, you will learn about the testing of contracts. We will go with the Truffle framework. Spend some time on Truffle [documentation](https://truffleframework.com/docs) and start afterwards.
+Here, you will learn to use frameworks. Frameworks also help in unit testing of contracts before deployment. 
+
+We will explore Hardhat, Foundry etc. frameworks. To start, spend some time on [Hardhat documentation](https://hardhat.org/hardhat-runner/docs/getting-started) and then move with different problem statements in this standard.
 
 Let's go for a test ride! :red_car:
 
