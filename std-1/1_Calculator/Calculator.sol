@@ -36,11 +36,13 @@ contract Calculator {
 
     /**
      * @dev Divides two passed numbers
+     * @dev require statement to avoid division by zero
      * @param a first number
      * @param b second number
      */
 
     function div(int a, int b) public pure returns (int){
+        require(b != 0, "Division by zero");
         return (a/b);
     }
 }
